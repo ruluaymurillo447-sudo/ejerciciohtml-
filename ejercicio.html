@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi primera página</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi página de ejemplo</h1>
+    <nav><a href="#contacto">Ir al contacto</a></nav>
+  </header>
+  <main>
+    <section>
+      <h2>Sobre mí</h2>
+      <p>Hola, <strong></strong><br><em></em>.</p>
+      <img src="foto.jpg" alt="Mi foto" width="200" height="200" usemap="#mapa">
+      <map name="mapa">
+        <area shape="circle" coords="100,100,40" alt="Mi cara" href="perfil.html">
+      </map>
+      <hr>
+      <h2>Mis tareas</h2>
+      <ul>
+        <li>Estudiar HTML</li>
+        <li>Practicar CSS</li>
+      </ul>
+      <ol>
+        <li>Crear la estructura</li>
+        <li>Agregar el contenido</li>
+      </ol>
+      <div>
+        <p>Mi color favorito es el <span style="color:green">verde</span>.</p>
+      </div>
+      <table>
+        <tr><th>Etiqueta</th><th>Función</th></tr>
+        <tr><td>p</td><td>Crea un párrafo</td></tr>
+      </table>
+      <audio src="musica.mp3" controls></audio>
+      <video src="clase.mp4" width="300" controls></video>
+      <iframe src="https://www.w3schools.com" width="300" height="200" title="W3Schools"></iframe>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="guardar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+        <br>
+        <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" name="ciudad">
+          <option value="bog">Bogotá</option>
+          <option value="med">Medellín</option>
+        </select>
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+        <br>
+        <button type="submit">Enviar mensaje </button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Hecho por un aprendiz</p>
+  </footer>
+</body>
+</html>
+
